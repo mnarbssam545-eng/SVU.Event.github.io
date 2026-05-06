@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل الفعاليات | كل الفعاليات</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal&family=Cairo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="bg-light">
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/logo.png" alt="SVU Events" height="40">
+                    SVU Events
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"> 
+                            <a class="nav-link active" href="index.html">الرئيسية</a></li>
+                        <li class="nav-item"> 
+                            <a class="nav-link" href="events.html">الفعاليات</a></li>
+                        <li class="nav-item"> 
+                            <a class="nav-link" href="about.html">حول</a></li>
+                        <li class="nav-item"> 
+                            <a class="nav-link" href="contact.html">إتصل بنا</a></li>
+                         <li class="nav-item">
+                              <a class="nav-link fw-bold text-primary" href="events_en.html">English</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-5 mb-5">
+
+        <h1 class="mb-4 text-primary text-center">جميع الفعاليات</h1>
+
+        <section class="bg-white p-4 rounded shadow-sm mb-5">
+            <div class="row g-3">
+                <div class="col-md-3">
+                    <input type="text" class="form-control" placeholder="بحث عن فعالية...">
+                </div>
+                <div class="col-md-3">
+                    <select id="categoryFilter" class="form-select">
+                       <option selected>التصنيف (الكل)</option>
+                      <option>ثقافة</option>
+                     <option>رياضة</option>
+                        <option>تعليم</option>
+                        <option>موسيقى</option>
+                        <option>فن</option>
+                        <option>عائلي</option>
+                        <option>أعمال</option>
+                        <option>تقنية</option>
+                        <option>خيري</option>
+                        <option>اجتماعي</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-select">
+                        <option selected>الموقع (الكل)</option>
+                        <option>دمشق</option>
+                        <option>حلب</option>
+                        <option>حمص</option>
+                        <option>اون لاين</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <input type="date" class="form-control">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="row g-4">
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="assets/img/event1.jpg" class="card-img-top" alt="مهرجان ثقافي" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">مهرجان ثقافي</h3>
+                            <p class="text-muted mb-1">📅 2026-05-10 | 📍 دمشق</p>
+                            <p class="badge bg-primary w-25">ثقافة</p>
+                            <p class="card-text flex-grow-1">فعالية ثقافية تضم عروضاً فنية وموسيقية ومعارض كتب.</p>
+                            <a href="event.html?id=1" class="btn btn-outline-primary mt-auto">التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="assets/img/event2.jpg" class="card-img-top" alt="بطولة رياضية" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">بطولة رياضية</h3>
+                            <p class="text-muted mb-1">📅 2026-05-12 | 📍 حلب</p>
+                            <p class="badge bg-success w-25">رياضة</p>
+                            <p class="card-text flex-grow-1">منافسات بين طلاب الجامعات في عدة ألعاب رياضية.</p>
+                            <a href="event.html?id=2" class="btn btn-outline-primary mt-auto">التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="assets/img/event3.jpg" class="card-img-top" alt="ورشة عمل" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">ورشة عمل</h3>
+                            <p class="text-muted mb-1">📅 2026-05-18 | 📍 اون لاين</p>
+                            <p class="badge bg-warning text-dark w-25">تعليم</p>
+                            <p class="card-text flex-grow-1">ورشة لتعلم مهارات جديدة في البرمجة والتصميم.</p>
+                            <a href="event.html?id=3" class="btn btn-outline-primary mt-auto">التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="assets/img/event4.jpg" class="card-img-top" alt="حفلة موسيقية" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">حفلة موسيقية</h3>
+                            <p class="text-muted mb-1">📅 2026-05-20 | 📍 حمص</p>
+                            <p class="badge bg-info text-dark w-25">موسيقى</p>
+                            <p class="card-text flex-grow-1">حفلة موسيقية ترفيهية يحييها طلاب الجامعة.</p>
+                            <a href="event.html?id=4" class="btn btn-outline-primary mt-auto">التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="assets/img/event5.jpg" class="card-img-top" alt="معرض فني" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">معرض فني تشكيلي</h3>
+                            <p class="text-muted mb-1">📅 2025-05-01 | 📍 حمص</p>
+                            <p class="badge bg-secondary w-25">فن</p>
+                            <p class="card-text flex-grow-1">عرض لوحات فنية لفنانين محليين.</p>
+                            <a href="event.html?id=5" class="btn btn-outline-primary mt-auto">التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="assets/img/event6.jpg" class="card-img-top" alt="يوم العائلة" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">يوم العائلة الترفيهي</h3>
+                            <p class="text-muted mb-1">📅 2025-07-05 | 📍 طرطوس</p>
+                            <p class="badge bg-danger w-25">عائلي</p>
+                            <p class="card-text flex-grow-1">أنشطة ترفيهية وألعاب للأطفال والعائلات.</p>
+                            <a href="event.html?id=6" class="btn btn-outline-primary mt-auto">التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="col-md-4 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="assets/img/event7.jpg" class="card-img-top" alt="ندوة ريادة الأعمال" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">ندوة ريادة الأعمال</h3>
+                            <p class="text-muted mb-1">📅 2025-10-09 | 📍 دمشق</p>
+                            <p class="badge bg-dark w-25">أعمال</p>
+                            <p class="card-text flex-grow-1">لقاء مع رواد أعمال لمشاركة تجاربهم.</p>
+                            <a href="event.html?id=7" class="btn btn-outline-primary mt-auto">التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="assets/img/event8.jpg" class="card-img-top" alt="ماراثون المدينة" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">ماراثون المدينة</h3>
+                            <p class="text-muted mb-1">📅 2025-10-25 | 📍 حلب</p>
+                            <p class="badge bg-success w-25">رياضة</p>
+                            <p class="card-text flex-grow-1">سباق جري مفتوح لجميع الفئات العمرية.</p>
+                            <a href="event.html?id=8" class="btn btn-outline-primary mt-auto">التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="assets/img/event9.jpg" class="card-img-top" alt="ورشة تصوير" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">ورشة تصوير فوتوغرافي</h3>
+                            <p class="text-muted mb-1">📅 2025-11-04 | 📍 اللاذقية</p>
+                            <p class="badge bg-secondary w-25">فن</p>
+                            <p class="card-text flex-grow-1">تعلم أساسيات التصوير باستخدام الكاميرا.</p>
+                            <a href="event.html?id=9" class="btn btn-outline-primary mt-auto">التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="col-md-4 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="assets/img/event10.jpg" class="card-img-top" alt="معرض تكنولوجيا" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">معرض تكنولوجيا حديثة</h3>
+                            <p class="text-muted mb-1">📅 2025-11-13 | 📍 اون لاين</p>
+                            <p class="badge bg-primary w-25">تقنية</p>
+                            <p class="card-text flex-grow-1">عرض أحدث الابتكارات في عالم التكنولوجيا.</p>
+                            <a href="event.html?id=10" class="btn btn-outline-primary mt-auto">التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="assets/img/event11.jpg" class="card-img-top" alt="أمسية شعرية" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">أمسية شعرية</h3>
+                            <p class="text-muted mb-1">📅 2025-11-24 | 📍 دمشق</p>
+                            <p class="badge bg-primary w-25">ثقافة</p>
+                            <p class="card-text flex-grow-1">قراءات شعرية مع شعراء محليين.</p>
+                            <a href="event.html?id=11" class="btn btn-outline-primary mt-auto">التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="assets/img/event12.jpg" class="card-img-top" alt="ورشة تصميم" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">ورشة تصميم جرافيك</h3>
+                            <p class="text-muted mb-1">📅 2026-01-15 | 📍 حمص</p>
+                            <p class="badge bg-warning text-dark w-25">تعليم</p>
+                            <p class="card-text flex-grow-1">تعلم أساسيات التصميم باستخدام برامج حديثة.</p>
+                            <a href="event.html?id=12" class="btn btn-outline-primary mt-auto">التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="col-md-4 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="assets/img/event13.jpg" class="card-img-top" alt="حفلة تخرج" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">حفلة تخرج طلابية</h3>
+                            <p class="text-muted mb-1">📅 2026-01-30 | 📍 دمشق</p>
+                            <p class="badge bg-info text-dark w-25">اجتماعي</p>
+                            <p class="card-text flex-grow-1">احتفال بتخرج دفعة جديدة من الطلاب.</p>
+                            <a href="event.html?id=13" class="btn btn-outline-primary mt-auto">التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="assets/img/event14.jpg" class="card-img-top" alt="سوق خيري" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">سوق خيري</h3>
+                            <p class="text-muted mb-1">📅 2026-02-25 | 📍 طرطوس</p>
+                            <p class="badge bg-danger w-25">خيري</p>
+                            <p class="card-text flex-grow-1">بيع منتجات لدعم الأعمال الخيرية.</p>
+                            <a href="event.html?id=14" class="btn btn-outline-primary mt-auto">التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="assets/img/event15.jpg" class="card-img-top" alt="مسابقة برمجة" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">مسابقة برمجة</h3>
+                            <p class="text-muted mb-1">📅 2026-03-01 | 📍 اون لاين</p>
+                            <p class="badge bg-primary w-25">تقنية</p>
+                            <p class="card-text flex-grow-1">تحدي برمجي بين الطلاب لحل مسائل تقنية.</p>
+                            <a href="event.html?id=15" class="btn btn-outline-primary mt-auto">التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white pt-4 pb-2 mt-auto">
+        <div class="container text-center">
+            <p>© جميع الحقوق محفوظة</p>
+            <div class="d-flex justify-content-center gap-3 mt-3">
+                <a href="#"><img src="assets/img/linkedin.png" alt="LinkedIn" width="30"></a>
+                <a href="#"><img src="assets/img/facebook.png" alt="Facebook" width="30"></a>
+                <a href="#"><img src="assets/img/youtube.png" alt="YouTube" width="30"></a>
+                <a href="#"><img src="assets/img/google.png" alt="SVU" width="30"></a>
+                <a href="#"><img src="assets/img/insta.png" alt="Instagram" width="30"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

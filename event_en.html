@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Directory | Event Details</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal&family=Cairo&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="bg-light">
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="index_en.html">
+                    <img src="assets/img/logo.png" alt="SVU Events" height="40">
+                    SVU Events
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"> 
+                            <a class="nav-link" href="index_en.html">Home</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="events_en.html">Events</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about_en.html">About</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact_en.html">Contact Us</a></li>
+                        <li class="nav-item">
+                            <a id="langSwitcher" class="nav-link fw-bold text-primary" href="event.html">العربية</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-5 mb-5" style="min-height: 60vh;">
+        <div class="row bg-white p-4 rounded shadow-sm">
+            
+            <div class="col-md-5 text-center mb-4 mb-md-0">
+                <img id="mainImage" src="" alt="Event Image" class="img-fluid rounded" style="max-height: 400px; object-fit: cover;">
+            </div>
+
+            <div class="col-md-7">
+                <h1 id="title" class="text-primary mb-3">Loading...</h1>
+                
+                <div class="d-flex gap-4 mb-4 text-muted">
+                    <span id="date">📅 </span>
+                     <span > <img src="assets/img/location.jpeg" alt="SVU Events" height="100">  </span>
+                    <span id="location">📍 </span>
+                </div>
+
+                <h3 class="h5 border-bottom pb-2 mb-3">Event Description</h3>
+                <p id="description" class="lh-lg mb-4"></p>
+
+               <div class="d-flex gap-3 mt-4">
+                   <button class="btn btn-success px-4" data-bs-toggle="modal" data-bs-target="#bookingModal">🎟️ Book Your Seat</button>
+                 <button class="btn btn-outline-secondary px-4">🔗 Share</button>
+               </div>
+            </div>
+
+        </div>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="bookingModalLabel">Confirm Booking</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Are you sure you want to book a seat for this event? The ticket will be sent to your university email.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal" onclick="alert('Booking confirmed successfully!')">Confirm Booking</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white pt-4 pb-2 mt-auto">
+        <div class="container text-center">
+            <p>© All Rights Reserved</p>
+            <div class="d-flex justify-content-center gap-3 mt-3">
+                <a href="#"><img src="assets/img/linkedin.png" alt="LinkedIn" width="30"></a>
+                <a href="#"><img src="assets/img/facebook.png" alt="Facebook" width="30"></a>
+                <a href="#"><img src="assets/img/youtube.png" alt="YouTube" width="30"></a>
+                <a href="#"><img src="assets/img/google.png" alt="SVU" width="30"></a>
+                <a href="#"><img src="assets/img/insta.png" alt="Instagram" width="30"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const id = params.get("id");
+
+        // تحديث رابط زر تبديل اللغة ليحتفظ بنفس رقم الفعالية
+        if (id) {
+            document.getElementById("langSwitcher").href = "event.html?id=" + id;
+        }
+
+        const events = {
+            1: { title: "Cultural Festival", date: "2026-05-10", location: "Damascus", description: "A diverse cultural festival combining literary, musical, and heritage arts, aiming to promote cultural identity and highlight local talents.", image: "assets/img/event1.jpg" },
+            2: { title: "Sports Championship", date: "2026-05-12", location: "Aleppo", description: "A sports championship bringing together university students in football, basketball, and track and field competitions.", image: "assets/img/event2.jpg" },
+            3: { title: "Workshop", date: "2026-05-18", location: "Online", description: "A training workshop to teach HTML and CSS basics for beginners.", image: "assets/img/event3.jpg" },
+            4: { title: "Musical Concert", date: "2026-05-20", location: "Homs", description: "A musical concert featuring youth bands providing various live performances.", image: "assets/img/event4.jpg" },
+            5: { title: "Fine Arts Exhibition", date: "2025-05-01", location: "Homs", description: "An exhibition featuring paintings by local artists reflecting social issues.", image: "assets/img/event5.jpg" },
+            6: { title: "Family Fun Day", date: "2025-07-05", location: "Tartus", description: "An open day for families featuring games and recreational activities.", image: "assets/img/event6.jpg" },
+            7: { title: "Entrepreneurship Seminar", date: "2025-10-09", location: "Damascus", description: "A seminar presented by entrepreneurs to share their experiences and advice.", image: "assets/img/event7.jpg" },
+            8: { title: "City Marathon", date: "2025-10-25", location: "Aleppo", description: "An open running race aiming to promote physical activity.", image: "assets/img/event8.jpg" },
+            9: { title: "Photography Workshop", date: "2025-11-04", location: "Latakia", description: "An educational workshop on the basics of photography and lighting.", image: "assets/img/event9.jpg" },
+            10: { title: "Modern Technology Exhibition", date: "2025-11-13", location: "Online", description: "An exhibition showcasing the latest technological innovations.", image: "assets/img/event10.jpg" },
+            11: { title: "Poetry Evening", date: "2025-11-24", location: "Damascus", description: "A cultural evening featuring poets presenting various poems.", image: "assets/img/event11.jpg" },
+            12: { title: "Graphic Design Workshop", date: "2026-01-15", location: "Homs", description: "A workshop to learn design using modern tools.", image: "assets/img/event12.jpg" },
+            13: { title: "Student Graduation Party", date: "2026-01-30", location: "Damascus", description: "An official celebration of student graduation.", image: "assets/img/event13.jpg" },
+            14: { title: "Charity Bazaar", date: "2026-02-25", location: "Tartus", description: "An event to sell products in support of charity projects.", image: "assets/img/event14.jpg" },
+            15: { title: "Programming Contest", date: "2026-03-01", location: "Online", description: "A competition to solve programming problems within a specified time.", image: "assets/img/event15.jpg" }
+        };
+
+        const event = events[id];
+
+        if(event){
+            document.getElementById("title").textContent = event.title;
+            document.getElementById("date").textContent = "📅 " + event.date;
+            document.getElementById("location").textContent = "📍 " + event.location;
+            document.getElementById("description").textContent = event.description;
+            document.getElementById("mainImage").src = event.image;
+        } else {
+            document.getElementById("title").textContent = "Event Not Found";
+            document.getElementById("description").textContent = "Please return to the previous page and select a valid event.";
+        }
+    </script>
+</body>
+</html>

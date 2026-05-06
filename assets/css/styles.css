@@ -1,0 +1,224 @@
+/* =========================================
+   إعدادات عامة والخطوط
+========================================= */
+body {
+    background-color: #f1f5f9;
+    color: #1e3a8a;
+    font-family: 'Tajawal', 'Cairo', sans-serif;
+}
+
+/* =========================================
+   شريط التنقل (Navbar)
+========================================= */
+.navbar {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.navbar-nav .nav-link {
+    transition: transform 0.3s ease, color 0.3s ease;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #e67e22 !important;
+    transform: translateY(-3px);
+}
+
+/* =========================================
+   البطاقات (Cards)
+========================================= */
+.card {
+    border-radius: 12px !important;
+    border: none !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15) !important;
+}
+
+/* =========================================
+   الأزرار والشارات (Buttons & Badges)
+========================================= */
+.btn-primary, .btn-outline-primary {
+    background-color: #3b82f6 !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 5px !important;
+    padding: 8px 15px !important;
+    transition: background-color 0.3s ease !important;
+}
+
+.btn-primary:hover, .btn-outline-primary:hover {
+    background-color: #333333 !important;
+    color: white !important;
+}
+
+.badge {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+/* =========================================
+   التذييل وأيقونات التواصل (Footer)
+========================================= */
+footer {
+    background-color: transparent !important;
+    
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+footer a img {
+    filter: grayscale(0.2);
+transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+footer a img:hover {
+    transform: scale(1.2);
+    
+}
+footer .id {
+    text-align: center !important;
+}
+
+/* التوافق مع الوضع الليلي تلقائياً */
+body.dark-mode footer {
+    border-top-color: rgba(255,255,255,0.1);
+    color: #ffffff;
+}
+/* =========================================
+   الوضع الليلي (Dark Mode)
+========================================= */
+body.dark-mode {
+    background-color: #121212 !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode .bg-light,
+body.dark-mode .bg-white,
+body.dark-mode .card,
+body.dark-mode .navbar {
+    background-color: #1e1e1e !important;
+    color: #ffffff !important;
+    border-color: #333 !important;
+}
+
+body.dark-mode .text-primary {
+    color: #66b2ff !important;
+}
+
+body.dark-mode .text-muted {
+    color: #aaaaaa !important;
+}
+
+body.dark-mode .navbar-brand,
+body.dark-mode .nav-link {
+    color: #ffffff !important;
+}
+
+body.dark-mode .form-control,
+body.dark-mode .form-select {
+    background-color: #2d2d2d;
+    color: white;
+    border-color: #444;
+}
+
+body.dark-mode .list-group-item,
+body[data-bs-theme="dark"] .list-group-item {
+    color: #f8f9fa !important;
+}
+
+/* تفتيح النصوص الباهتة لتصبح مقروءة بوضوح */
+body.dark-mode .text-muted,
+body[data-bs-theme="dark"] .text-muted {
+    color: #ced4da !important;
+}
+
+
+body.dark-mode .badge.bg-primary, body[data-bs-theme="dark"] .badge.bg-primary {
+    background-color: #0d6efd !important;
+    color: #fff !important;
+}
+
+body.dark-mode .badge.bg-success, body[data-bs-theme="dark"] .badge.bg-success {
+    background-color: #198754 !important;
+    color: #fff !important;
+}
+
+body.dark-mode .badge.bg-warning, body[data-bs-theme="dark"] .badge.bg-warning {
+    background-color: #ffc107 !important;
+    color: #000 !important;
+}
+
+body.dark-mode .badge.bg-danger, body[data-bs-theme="dark"] .badge.bg-danger {
+    background-color: #dc3545 !important;
+    color: #fff !important;
+}
+
+body.dark-mode .badge.bg-info, body[data-bs-theme="dark"] .badge.bg-info {
+    background-color: #0dcaf0 !important;
+    color: #000 !important;
+}
+
+body.dark-mode .badge.bg-dark, body[data-bs-theme="dark"] .badge.bg-dark {
+    background-color: #212529 !important;
+    border: 1px solid #495057 !important; /* إضافة إطار خفيف لتمييزه عن الخلفية السوداء */
+    color: #fff !important;
+}
+
+/* تأكيد انقلاب لون خلفية البطاقات في الوضع الليلي */
+body.dark-mode .card,
+body[data-bs-theme="dark"] .card {
+    background-color: #212529 !important;
+    color: #f8f9fa !important;
+    border-color: #343a40 !important;
+}
+footer .d-flex img {
+    border-radius: 50%; 
+    background-color: white; 
+    padding: 5px; /* إضافة مساحة صغيرة بين الشعار وحافة الدائرة */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    transition: transform 0.3s ease; /* إضافة تأثير حركي ناعم عند التمرير */
+}
+
+/* تأثير حركي عند تمرير الماوس فوق الأيقونة */
+footer .d-flex a:hover img {
+    transform: scale(1.1); /* تكبير الأيقونة قليلاً */
+}
+footer .d-flex img {
+    border-radius: 50% !important; /* فرض الشكل الدائري لقص الزوايا الملونة */
+    object-fit: cover !important; 
+    aspect-ratio: 1 / 1 !important; /* فرض التناسب المربع 1:1 قبل القص الدائري */
+    transition: transform 0.3s ease; /* تأثير ناعم عند تمرير الماوس */
+}
+
+/* تأثير تكبير بسيط عند التمرير */
+footer .d-flex a:hover img {
+    transform: scale(1.15);
+}
+
+body.dark-mode .form-control,
+body[data-bs-theme="dark"] .form-control {
+    background-color: #2b3035 !important; 
+    color: #f8f9fa !important; 
+    border-color: #495057 !important; 
+}
+
+body.dark-mode .form-control::placeholder,
+body[data-bs-theme="dark"] .form-control::placeholder {
+    color: #adb5bd !important; 
+    opacity: 1 !important; 
+}
+
+body.dark-mode .form-control:focus,
+body[data-bs-theme="dark"] .form-control:focus {
+    background-color: #2b3035 !important;
+    color: #f8f9fa !important;
+    border-color: #86b7fe !important; 
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25) !important;
+}

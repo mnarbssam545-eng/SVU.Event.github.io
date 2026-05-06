@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVU Events Directory</title>
+    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Tajawal&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index_en.html">
+                    <img src="assets/img/logo.png" alt="SVU Events" height="40">
+                    SVU Events
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"> 
+                            <a class="nav-link active" href="index_en.html">Home</a></li>
+                        <li class="nav-item"> 
+                            <a class="nav-link" href="events.html">Events</a></li>
+                        <li class="nav-item"> 
+                            <a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"> 
+                            <a class="nav-link" href="contact.html">Contact Us</a></li>
+                        <li class="nav-item">
+                             <!-- زر العودة للغة العربية -->
+                             <a class="nav-link fw-bold text-primary" href="index.html">العربية</a></li>    
+                    </ul>
+                    <button id="darkModeToggle" class="btn btn-sm btn-outline-secondary ms-3">🌙 Dark Mode</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-4">
+        <div class="container mb-5">
+            <div class="position-relative shadow-sm rounded overflow-hidden">
+                <img id="slider" src="assets/img/event1.jpg" class="img-fluid w-100" style="height:400px; object-fit:cover;" alt="Featured Events">
+                <button onclick="prevSlide()" class="btn btn-dark position-absolute top-50 start-0 translate-middle-y ms-3" style="opacity: 0.7;">‹</button>
+                <button onclick="nextSlide()" class="btn btn-dark position-absolute top-50 end-0 translate-middle-y me-3" style="opacity: 0.7;">›</button>
+            </div>
+        </div>
+
+        <section class="mb-5">
+            <h2 class="mb-4">Featured Events this Week</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/img/event1.jpg" class="card-img-top" alt="Cultural Festival">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Cultural Festival</h3>
+                            <p class="card-text">A cultural event featuring art exhibitions, musical performances, and book fairs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/img/event2.jpg" class="card-img-top" alt="Sports Championship">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Sports Championship</h3>
+                            <p class="card-text">Competitions between university students in various sports.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/img/event4.jpg" class="card-img-top" alt="Family Fun Day">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Family Fun Day</h3>
+                            <p class="card-text">Recreational activities and games for children and families.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <h2 class="mb-3">Categories</h2>
+            <div class="d-flex gap-2">
+                <span class="badge bg-primary">Culture</span>
+                <span class="badge bg-success">Sports</span>
+                <span class="badge bg-warning text-dark">Music</span>
+                <span class="badge bg-info text-dark">Family</span>
+                 <span class="badge bg-primary">Art</span>
+                <span class="badge bg-success">Education</span>
+                <span class="badge bg-warning text-dark">Technique</span>
+                <span class="badge bg-info text-dark">Charity</span>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <h2 class="mb-4">Latest Events</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/img/event3.jpg" class="card-img-top" alt="Musical Concert">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Musical Concert</h3>
+                            <p class="card-text">A concert featuring youth musical bands and live performances.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/img/event4.jpg" class="card-img-top" alt="Programming Skills Workshop">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Programming Skills Workshop</h3>
+                            <p class="card-text">A workshop teaching HTML and CSS basics for beginners.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/img/event5.jpg" class="card-img-top" alt="Fine Arts Exhibition">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Fine Arts Exhibition</h3>
+                            <p class="card-text">An exhibition of paintings by local artists.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+   </main>
+    <footer class="container py-5 mt-5">
+        <div class="row">
+            
+            <div class="col-12 text-center mb-4">
+                <p class="text-muted mb-1">© All Rights Reserved</p>
+                <p class="id text-muted mb-0" style="text-align: center !important; display: inline-block;">
+                    mohamad_205946 c4 <br />
+                    manar_305535 c4 <br />
+                    islam_298589 c4 <br />
+                    aya_302242 c4 <br />
+                    mariane_299250 c4
+                </p>
+            </div>
+
+            <div class="col-12 text-center">
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="https://www.linkedin.com/school/syrian-virtual-university/">
+                        <img src="assets/img/linkedin.png" alt="LinkedIn" width="30" />
+                    </a>
+
+                    <a href="https://www.facebook.com/share/1NgnBAfFuW/?mibextid=wwXIfr">
+                        <img src="assets/img/facebook.png" alt="Facebook" width="30" />
+                    </a>
+
+                    <a href="http://www.youtube.com/@SyrianVirtualUniversitySVU">
+                        <img src="assets/img/youtube.png" alt="YouTube" width="30" />
+                    </a>
+
+                    <a href="https://svuonline.org/">
+                        <img src="assets/img/google.png" alt="SVU" width="30" />
+                    </a>
+
+                    <a href="https://www.instagram.com/syrian_virtual_university?igsh=Z3Rrb2oweGpsNmEy">
+                        <img src="assets/img/insta.png" alt="Instagram" width="30" />
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
